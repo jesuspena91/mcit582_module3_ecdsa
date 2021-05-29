@@ -7,8 +7,8 @@ from hashlib import sha256
 def sign(m):
 	#generate public key
 	#Your code here
-	private_key = fastecdsa.keys.gen_private_key(curve=ecdsa.SECP256k1)
-	public_key = fastecdsa.keys.get_public_key(private_key, curve=ecdsa.SECP256k1)
+	private_key = keys.gen_private_key(curve=ecdsa.SECP256k1)
+	public_key = keys.get_public_key(private_key, curve=ecdsa.SECP256k1)
 
 	#generate signature
 	#Your code here
